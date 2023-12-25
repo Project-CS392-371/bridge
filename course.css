@@ -1,0 +1,300 @@
+# bridge
+
+element.style {
+    padding-bottom: 10px;
+    width: max(100%, 350px);
+    transition-timing-function: ease;
+    transition-duration: 1.5s;
+    transition-delay: 0.235294s;
+}
+.course-list .course-list__header-content[data-placement="left"] {
+    margin-right: auto;
+}
+.course-list .course-list__header-content[data-alignment="center"] {
+    text-align: center;
+}
+.course-list .course-list_course-name, .course-list .course-list_course-description {
+    margin: 0;
+}
+.course-list .course-list__header-content {
+    max-width: 100%;
+}
+.fadeIn:not([data-override-initial-global-animation]) {
+    opacity: 1 !important;
+}
+@media screen and (max-width: 767px) and (orientation: portrait)
+.course-list .course-list__course-name {
+    font-size: calc((var(--course-list-course-name-font-font-size-value) - 1) * calc(.012 * min(100vh, 900px)) + 1rem);
+}
+.course-list .course-list__course-name {
+    font-family: var(--course-list-course-name-font-font-family);
+    font-style: var(--course-list-course-name-font-font-style);
+    font-weight: var(--course-list-course-name-font-font-weight);
+    line-height: var(--course-list-course-name-font-line-height);
+    letter-spacing: var(--course-list-course-name-font-letter-spacing);
+    text-transform: var(--course-list-course-name-font-text-transform);
+}
+.preFade {
+    opacity: 0;
+    transition-property: opacity;
+}
+h1 {
+    color: var(--headingExtraLargeColor);
+}
+@media screen and (max-width: 767px) and (orientation: portrait)
+h1 {
+    font-size: calc((var(--heading-1-size-value) - 1) * calc(.012 * min(100vh, 900px)) + 1rem);
+}
+h1 {
+    line-height: calc(var(--heading-font-line-height) * (1 + (1 - var(--heading-1-size-value))/25));
+}
+h1, h2, h3, h4 {
+    font-family: var(--heading-font-font-family);
+    font-style: var(--heading-font-font-style);
+    font-weight: var(--heading-font-font-weight);
+    line-height: var(--heading-font-line-height);
+    letter-spacing: var(--heading-font-letter-spacing);
+    text-transform: var(--heading-font-text-transform);
+}
+h1, h2, h3, h4 {
+    margin: 2rem 0;
+}
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+user agent stylesheet
+:-webkit-any(article, aside, nav, section) :-webkit-any(article, aside, nav, section) h1 {
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+user agent stylesheet
+:-webkit-any(article, aside, nav, section) h1 {
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+}
+user agent stylesheet
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.page-section {
+    color: var(--paragraphMediumColor);
+}
+@media screen and (max-width: 767px) and (orientation: portrait)
+.site-wrapper, .sqs-catalog-item-list {
+    font-size: calc((var(--normal-text-size-value) - 1) * calc(.012 * min(100vh, 900px)) + 1rem);
+}
+.site-wrapper, .sqs-catalog-item-list {
+    font-family: var(--body-font-font-family);
+    font-style: var(--body-font-font-style);
+    font-weight: var(--body-font-font-weight);
+    line-height: var(--body-font-line-height);
+    letter-spacing: var(--body-font-letter-spacing);
+    text-transform: var(--body-font-text-transform);
+    -webkit-font-smoothing: antialiased;
+}
+body {
+    background-color: var(--siteBackgroundColor);
+    color: var(--paragraphMediumColor);
+}
+@supports (--test-custom-property: true)
+body {
+    --sqs-site-gutter: 2vw;
+    --sqs-mobile-site-gutter: 6vw;
+    --sqs-site-max-width: 1400px;
+}
+body {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+html, body {
+    font-size: var(--base-font-size);
+}
+:root {
+    --announcement-bar-background-color: hsla(var(--black-hsl),1);
+    --announcement-bar-text-color: hsla(var(--white-hsl),1);
+    --backgroundOverlayColor: hsla(var(--white-hsl),1);
+    --course-item-nav-active-lesson-background-color: hsla(var(--darkAccent-hsl),1);
+    --course-item-nav-active-lesson-text-color: hsla(var(--white-hsl),1);
+    --course-item-nav-background-color: hsla(var(--lightAccent-hsl),1);
+    --course-item-nav-border-color: hsla(var(--darkAccent-hsl),0.25);
+    --course-item-nav-text-color: hsla(var(--black-hsl),1);
+    --course-list-course-progress-bar-color: hsla(var(--accent-hsl),1);
+    --course-list-course-item-background: hsla(var(--lightAccent-hsl),1);
+    --course-list-course-item-hover-background: hsla(var(--lightAccent-hsl),0.75);
+    --course-list-course-item-text-color: hsla(var(--black-hsl),1);
+    --course-list-course-chapter-divider-color: hsla(var(--darkAccent-hsl),1);
+    --course-list-grid-layout-chapter-divider-color: hsla(var(--black-hsl),1);
+    --course-list-grid-layout-course-item-background-color: hsla(var(--lightAccent-hsl),1);
+    --course-list-grid-layout-course-item-hover-background-color: hsla(var(--lightAccent-hsl),0.75);
+    --course-list-grid-layout-course-item-text-color: hsla(var(--black-hsl),1);
+    --course-list-grid-layout-course-item-border-color: hsla(var(--darkAccent-hsl),1);
+    --gradientHeaderBackgroundColor: hsla(var(--white-hsl),1);
+    --gradientHeaderBorderColor: hsla(var(--black-hsl),1);
+    --gradientHeaderDropShadowColor: hsla(var(--black-hsl),1);
+    --gradientHeaderNavigationColor: hsla(var(--black-hsl),1);
+    --headerDropShadowColor: hsla(var(--black-hsl),1);
+    --headerBorderColor: hsla(var(--black-hsl),1);
+    --headingExtraLargeColor: hsla(var(--black-hsl),1);
+    --headingLargeColor: hsla(var(--black-hsl),1);
+    --headingLinkColor: hsla(var(--safeDarkAccent-hsl),1);
+    --headingMediumColor: hsla(var(--black-hsl),1);
+    --headingSmallColor: hsla(var(--black-hsl),1);
+    --image-block-card-image-button-bg-color: hsla(var(--safeDarkAccent-hsl),1);
+    --image-block-card-image-button-text-color: hsla(var(--safeInverseDarkAccent-hsl),1);
+    --image-block-card-image-overlay-color: hsla(var(--darkAccent-hsl),1);
+    --image-block-card-image-subtitle-color: hsla(var(--black-hsl),1);
+    --image-block-card-image-title-bg-color: hsla(var(--white-hsl),0);
+    --image-block-card-image-title-color: hsla(var(--black-hsl),1);
+    --image-block-card-inline-link-color: hsla(var(--black-hsl),1);
+    --image-block-collage-background-color: hsla(var(--lightAccent-hsl),1);
+    --image-block-collage-image-button-bg-color: hsla(var(--safeDarkAccent-hsl),1);
+    --image-block-collage-image-button-text-color: hsla(var(--safeInverseDarkAccent-hsl),1);
+    --image-block-collage-image-overlay-color: hsla(var(--darkAccent-hsl),1);
+    --image-block-collage-image-subtitle-color: hsla(var(--black-hsl),1);
+    --image-block-collage-image-title-bg-color: hsla(var(--white-hsl),0);
+    --image-block-collage-image-title-color: hsla(var(--black-hsl),1);
+    --image-block-collage-inline-link-color: hsla(var(--black-hsl),1);
+    --image-block-overlap-image-button-bg-color: hsla(var(--safeDarkAccent-hsl),1);
+    --image-block-overlap-image-button-text-color: hsla(var(--safeInverseDarkAccent-hsl),1);
+    --image-block-overlap-image-overlay-color: hsla(var(--darkAccent-hsl),1);
+    --image-block-overlap-image-subtitle-color: hsla(var(--black-hsl),1);
+    --image-block-overlap-image-title-bg-color: hsla(var(--white-hsl),1);
+    --image-block-overlap-image-title-color: hsla(var(--black-hsl),1);
+Show All Properties (243 more)
+}
+:root {
+    --white-hsl: 0,0%,100%;
+    --black-hsl: 0,0%,0%;
+    --safeLightAccent-hsl: 26,13.16%,55.28999999999999%;
+    --safeDarkAccent-hsl: 26,13.16%,55.28999999999999%;
+    --safeInverseAccent-hsl: 0,0%,100%;
+    --safeInverseLightAccent-hsl: 0,0%,100%;
+    --safeInverseDarkAccent-hsl: 0,0%,100%;
+    --accent-hsl: 26,13.16%,55.28999999999999%;
+    --lightAccent-hsl: 37.5,8.7%,81.96%;
+    --darkAccent-hsl: 23.08,13.98%,18.24%;
+}
+:root {
+    --previous-section-divider-offset: 0px;
+}
+:root {
+    --form-field-shape-border-top-left-radius: 5px;
+    --form-field-shape-border-top-right-radius: 5px;
+    --form-field-shape-border-bottom-left-radius: 5px;
+    --form-field-shape-border-bottom-right-radius: 5px;
+    --form-field-border-thickness: 1px;
+    --form-field-padding-vertical: 10px;
+    --form-field-padding-horizontal: 10px;
+    --form-field-checkbox-shape-border-top-left-radius: 5px;
+    --form-field-checkbox-shape-border-top-right-radius: 5px;
+    --form-field-checkbox-shape-border-bottom-left-radius: 5px;
+    --form-field-checkbox-shape-border-bottom-right-radius: 5px;
+    --form-field-checkbox-border-thickness: 1px;
+    --form-field-checkbox-size: 16px;
+    --form-field-checkbox-space-between-icon-and-text: 11px;
+    --form-field-checkbox-padding-vertical: 10px;
+    --form-field-checkbox-padding-horizontal: 10px;
+    --form-field-checkbox-row-gap: 12px;
+    --form-field-checkbox-column-gap: 20px;
+    --form-field-radio-shape-border-top-left-radius: 5px;
+    --form-field-radio-shape-border-top-right-radius: 5px;
+    --form-field-radio-shape-border-bottom-left-radius: 5px;
+    --form-field-radio-shape-border-bottom-right-radius: 5px;
+    --form-field-radio-border-thickness: 1px;
+    --form-field-radio-size: 17px;
+    --form-field-radio-space-between-icon-and-text: 11px;
+    --form-field-radio-padding-vertical: 10px;
+    --form-field-radio-padding-horizontal: 10px;
+    --form-field-radio-row-gap: 12px;
+    --form-field-radio-column-gap: 20px;
+    --form-field-dropdown-icon-thickness: 1px;
+    --form-field-dropdown-icon-size: 18px;
+    --form-field-survey-shape-border-top-left-radius: 5px;
+    --form-field-survey-shape-border-top-right-radius: 5px;
+    --form-field-survey-shape-border-bottom-left-radius: 5px;
+    --form-field-survey-shape-border-bottom-right-radius: 5px;
+    --form-field-survey-border-thickness: 1px;
+    --form-field-survey-size: 17px;
+    --form-label-spacing-bottom: 4px;
+    --form-description-spacing-bottom: 4px;
+    --form-caption-spacing-bottom: 2px;
+    --form-field-spacing-bottom: 20px;
+    --form-field-column-gap: 10px;
+}
+:root {
+    --base-font-size: 16px;
+    --heading-font-font-family: gopher;
+    --heading-font-font-style: normal;
+    --heading-font-font-weight: 500;
+    --heading-font-text-transform: none;
+    --heading-font-letter-spacing: 0em;
+    --heading-font-line-height: 1.2em;
+    --body-font-font-family: gopher;
+    --body-font-font-style: normal;
+    --body-font-font-weight: 400;
+    --body-font-text-transform: none;
+    --body-font-letter-spacing: 0em;
+    --body-font-line-height: 1.6em;
+    --meta-font-font-family: gopher;
+    --meta-font-font-style: normal;
+    --meta-font-font-weight: 500;
+    --meta-font-text-transform: uppercase;
+    --meta-font-letter-spacing: 0em;
+    --meta-font-line-height: 1em;
+    --heading-1-size: 4.5rem;
+    --heading-1-size-value: 4.5;
+    --heading-2-size: 3rem;
+    --heading-2-size-value: 3;
+    --heading-3-size: 2.5rem;
+    --heading-3-size-value: 2.5;
+    --heading-4-size: 2rem;
+    --heading-4-size-value: 2;
+    --large-text-size: 1.5rem;
+    --large-text-size-value: 1.5;
+    --normal-text-size: 1.2rem;
+    --normal-text-size-value: 1.2;
+    --small-text-size: 1rem;
+    --small-text-size-value: 1;
+    --normal-meta-size: .8rem;
+    --normal-meta-size-value: .8;
+    --site-title-font-font-family: var(--heading-font-font-family);
+    --site-title-font-font-style: var(--heading-font-font-style);
+    --site-title-font-font-weight: var(--heading-font-font-weight);
+    --site-title-font-text-transform: var(--heading-font-text-transform);
+    --site-title-font-letter-spacing: var(--heading-font-letter-spacing);
+    --site-title-font-line-height: var(--heading-font-line-height);
+    --site-title-font-font-size: 2rem;
+    --site-title-font-font-size-value: 2;
+    --mobile-site-title-font-font-family: var(--heading-font-font-family);
+    --mobile-site-title-font-font-style: var(--heading-font-font-style);
+    --mobile-site-title-font-font-weight: var(--heading-font-font-weight);
+    --mobile-site-title-font-text-transform: var(--heading-font-text-transform);
+    --mobile-site-title-font-letter-spacing: var(--heading-font-letter-spacing);
+    --mobile-site-title-font-line-height: var(--heading-font-line-height);
+    --mobile-site-title-font-font-size: var(--normal-text-size);
+Show All Properties (745 more)
+}
+injected stylesheet
+:host, :root {
+    --rem: 16;
+}
+@media screen and (max-width: 991px)
+html {
+    font-size: min(var(--base-font-size), 16px);
+}
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+h1.course-list_course-name.course-list_header-content.preFade.fadeIn {
+}
